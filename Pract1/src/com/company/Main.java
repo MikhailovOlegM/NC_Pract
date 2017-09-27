@@ -1,11 +1,13 @@
 package com.company;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello");
-
         print(args);
+        sort(args);
     }
 
     public static void print(String[] args) {
@@ -14,5 +16,14 @@ public class Main {
         }
     }
 
+    public static void sort(String[] args) {
+        Arrays.sort(args, new Comparator<String>() {
+            @Override
+            public int compare(String string1, String string2) {
+                return string1.compareTo(string2);
+            }
+        });
+        System.out.println(Arrays.toString(args));
+    }
 
 }
