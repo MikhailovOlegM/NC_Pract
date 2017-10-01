@@ -32,7 +32,7 @@ public class Main {
                 args[shortestStringIndex] = temp;
             }
         }
-        System.out.println(Arrays.toString(args));
+        print(args);
     }
     
 }
