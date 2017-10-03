@@ -3,6 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        print(args);
+        sort(args);
     }
 
     public static void print(String[] args) {
